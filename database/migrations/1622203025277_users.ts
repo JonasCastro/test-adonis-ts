@@ -9,6 +9,8 @@ export default class Users extends BaseSchema {
       table.string('username')
       table.string('email')
       table.string('password')
+      table.string('token')
+      table.timestamp('token_created_at')
       table.timestamps(true)
     })
   }
